@@ -1,24 +1,38 @@
+/* Estilos para el input de búsqueda */
 input {
   width: 500px;
   height: 40px;
   font-size: 18px;
+  padding: 5px; /* Se agrego un padding*/
+  border-radius: 5px; /* Añade esquinas redondeadas */
+  border: 1px solid #ccc; /* Color de borde más suave */
+  margin-bottom: 20px; /* Espacio debajo del input */
 }
 
-#lista-de-productos {
-  display: flex
+/* Contenedor de la lista de productos */
+#listaProductos {
+  display: flex;
+  flex-wrap: wrap; /* Se agrego para permitir que los elementos se ajusten en varias filas */
+  gap: 20px; /* Para el espacio entre los productos */
 }
 
+/* Estilos para cada producto */
 .producto {
   width: 200px;
-  height: 200px;
-  margin: 10px;
+  height: auto; /* Se agrego para mejor vista*/
+  padding: 10px; /* Se agrego un padding */
   border: 2px solid black;
+  border-radius: 8px; /* Esquinas redondeadas */
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar los productos */
+  background-color: #f9f9f9; /* Fondo claro para cada producto */
 }
 
+/* Se agrega margin-botton, Imagen dentro del producto */
 .producto img {
   width: 70%;
-  height: auto
+  height: auto;
+  margin-bottom: 10px; 
 }

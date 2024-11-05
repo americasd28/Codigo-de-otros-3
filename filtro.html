@@ -12,13 +12,21 @@
 <body>
 
   <div>
-      <input type="text" placeholder="Seleccioná un color o tipo">
-      <button>Filtrar</button>
+      <!-- Añadido un ID en el input para que el JavaScript pueda capturar su valor -->
+      <input type="text" id="inputBusqueda" placeholder="Selecciona un color o tipo">
+      
+      <!-- Añadido un ID en el botón para asociarlo con el event listener en JavaScript -->
+      <button id="botonFiltrar">Filtrar</button>
+      
       <h1>Lista de productos </h1>
-      <div id="lista-de-productos">
-    </div>
+      
+      <!-- Cambié el ID a "listaProductos" para que coincida con el ejemplo en el script -->
+      <div id="listaProductos">
+      </div>
   </div>
-  <script src="../filtro.js"></script>
+  
+  <!-- Ruta corregida al archivo JavaScript si está en el mismo nivel de carpeta -->
+  <script src="filtro.js"></script>
 </body>
 
 </html>
